@@ -53,7 +53,18 @@ namespace test_c_sharp
         {
             int result = number * number * number;
             return result;
-        }
+        }   
+        
+            // IF STATEMENTS
+            int a = 50;
+            int b = 6;
+            if(a < b)
+            {
+                Console.WriteLine(a + " is less than " + b);
+            } else
+            {
+                Console.WriteLine(a + " is greater than " + b);
+            }
 
         }
     }

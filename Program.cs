@@ -6,14 +6,30 @@ namespace test_c_sharp
     {
         static void Main(string[] args)
         {
-            int cube_return = CubeNumber(3);
-            Console.WriteLine(cube_return);
+            Console.WriteLine(GetDay(5));
+
         }
-        // method - performs a specific task w/ returns
-        static int CubeNumber(int number)
+        // SWITCH STATEMENTS
+        static string GetDay(int dayNum)
         {
-            int result = number * number * number;
-            return result;
+            string dayName;
+
+            switch(dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                default:
+                    dayName = "Invalid day number";
+                    break;
+            }
+            return dayName; 
         }
     }
 }
