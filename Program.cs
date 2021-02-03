@@ -11,6 +11,7 @@ namespace test_c_sharp
             Console.WriteLine(luckyNumbers[2]);
             luckyNumbers[2] = 21000;
             Console.WriteLine(luckyNumbers[2]);
+            string[] friends = new string[];
 
         }
     }
