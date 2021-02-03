@@ -27,7 +27,33 @@ namespace test_c_sharp
             Console.Write("Enter a color: ");
             string color = Console.ReadLine();
             Console.WriteLine($"My favorit color is {color}");
-
+            // create an array
+            int[] luckyNumbers = {4, 5, 9, 21, 63};
+            Console.WriteLine(luckyNumbers[2]);
+            luckyNumbers[2] = 21000;
+            Console.WriteLine(luckyNumbers[2]);
+            string[] friends = new string[5]; // empty array with length 5 or 0-4
+            friends[0] = "Cullen";
+                    static void Main(string[] args)
+        {
+            string name = "cullen"; 
+            SayHi(name, 2021);
+        }
+        // method - performs a specific task w/o returns
+        static void SayHi(string name, int cur_year) 
+        {
+            Console.WriteLine("Hello User " + name + " it is " + cur_year);
+                static void Main(string[] args)
+        {
+            int cube_return = CubeNumber(3);
+            Console.WriteLine(cube_return);
+        }
+        // method - performs a specific task w/ returns
+        static int CubeNumber(int number)
+        {
+            int result = number * number * number;
+            return result;
+        }
 
         }
     }

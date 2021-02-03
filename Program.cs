@@ -6,13 +6,14 @@ namespace test_c_sharp
     {
         static void Main(string[] args)
         {
-            // create an array
-            int[] luckyNumbers = {4, 5, 9, 21, 63};
-            Console.WriteLine(luckyNumbers[2]);
-            luckyNumbers[2] = 21000;
-            Console.WriteLine(luckyNumbers[2]);
-            string[] friends = new string[];
-
+            int cube_return = CubeNumber(3);
+            Console.WriteLine(cube_return);
+        }
+        // method - performs a specific task w/ returns
+        static int CubeNumber(int number)
+        {
+            int result = number * number * number;
+            return result;
         }
     }
 }
