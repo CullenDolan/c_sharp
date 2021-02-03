@@ -14,11 +14,12 @@ namespace test_c_sharp
             decimal dec_val = 3.1415M; // most precise
             bool isMale = true;
             Console.WriteLine("My name is " + myName + " I am " + age + " years old.");
-            Console.WriteLine(grade);
-            Console.WriteLine(float_val);
-            Console.WriteLine(doub_val);
-            Console.WriteLine(dec_val);
-            Console.WriteLine(isMale);
+            Console.WriteLine(myName.Length); //examples of attribute
+            Console.WriteLine(myName.ToUpper()); // method
+            Console.WriteLine(myName[5]); // string index
+            Console.WriteLine(myName.IndexOf("u")); // find where something starts
+            Console.WriteLine(Math.Floor(-4.55)); //another method that has math operations
+
 
         }
     }
