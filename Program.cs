@@ -6,11 +6,11 @@ namespace test_c_sharp
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the second number: ");
-            Double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(num1 + num2);
+            // create an array
+            int[] luckyNumbers = {4, 5, 9, 21, 63};
+            Console.WriteLine(luckyNumbers[2]);
+            luckyNumbers[2] = 21000;
+            Console.WriteLine(luckyNumbers[2]);
 
         }
     }
