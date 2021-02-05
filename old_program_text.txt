@@ -65,6 +65,28 @@ namespace test_c_sharp
             {
                 Console.WriteLine(a + " is greater than " + b);
             }
+            // SWITCH STATEMENTS
+        static string GetDay(int dayNum)
+        {
+            string dayName;
+
+            switch(dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                default:
+                    dayName = "Invalid day number";
+                    break;
+            }
+            return dayName; 
+        }
 
         }
     }
